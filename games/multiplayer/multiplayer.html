@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> TicTacToe - OAuthTaker </title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+
+<body>
+
+    <div class="hero">
+        <h3 class="title"> Let's find you a match</h3>
+        <div class="space"></div>
+        <input type="text" id="name" autocomplete="off" placeholder="Enter Name...">
+        <div class="space"></div>
+        <button id="match"> Start MatchMaking </button>
+        <div class="space"></div>
+        <h3 id="status"></h3>
+        <button class="home back" onclick="location.href='../../index.html';"> Back </button>
+    </div>
+
+</body>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+
+<script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+        apiKey: "AIzaSyDi-AXX0jshA_1Tkjwe9Gllwh2zuYTQWrI",
+        authDomain: "tictactoe-b6994.firebaseapp.com",
+        databaseURL: "https://tictactoe-b6994-default-rtdb.firebaseio.com",
+        projectId: "tictactoe-b6994",
+        storageBucket: "tictactoe-b6994.appspot.com",
+        messagingSenderId: "273974871748",
+        appId: "1:273974871748:web:11839b509e92ef55762b91",
+        measurementId: "G-R1P938G3MP"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+</script>
+
+<script src="multi.js"></script>
+
+</html>

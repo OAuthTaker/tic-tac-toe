@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+
+body {
+    background: #003171;
+    height: 80vh;
+    font-family: "montserrat", sans-serif;
+}
+
+.hero {
+    background: #3572d4;
+    box-shadow: 0 0 3vh #01132b;
+    border-radius: 4vh;
+    height: 80vh;
+    width: 47vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    color: rgb(10, 29, 136);
+    line-height: 0.7;
+    margin: 0 auto;
+    text-align: left;
+    width: 1.875em;
+    font-size: 12vh;
+    margin-top: 10vh;
+}
+
+h3 {
+    font-size: 5vh;
+    margin-top: 2vh;
+    margin-block-end: 0;
+    margin-bottom: 3vh;
+    color: rgb(11, 23, 129);
+}
+
+#modes {
+    margin-top: 7vh;
+}
+
+.title {
+    margin-top: 5vh;
+}
+
+button {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.7vh;
+    font-weight: 600;
+    width: 36vh;
+    height: 7vh;
+    margin: 1vh;
+    border: 0.4vh solid rgb(6, 11, 82);
+    border-radius: 20vh;
+    background: rgb(4, 12, 126);
+    color: rgba(255, 255, 255, 0.664);
+    outline: none;
+    cursor: pointer;
+}
+
+input {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.7vh;
+    font-weight: 600;
+    width: 32vh;
+    height: 6vh;
+    margin-top: 1vh;
+    border: 0.4vh solid rgb(6, 11, 82);
+    border-radius: 20vh;
+    background: rgb(4, 12, 126);
+    color: white;
+    outline: none;
+    padding-left: 3vh;
+}
+
+.space {
+    height: 2vh;
+    width: 0.1vh;
+}
+
+.stat {
+    background: rgb(12, 12, 136);
+    padding: 1vh 0;
+    font-size: 2.5vh;
+    font-weight: 600;
+    margin: 1.5vh;
+    border-radius: 50vh;
+    color: rgb(155, 227, 255);
+    border: 0.5vh solid rgb(2, 3, 58);
+}
+
+.xx {
+    margin-top: 5vh;
+}
+
+.turn {
+    background: rgb(18, 18, 224);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 14vh 14vh 14vh;
+    grid-template-rows: 14vh 14vh 14vh;
+    margin: 5vh auto;
+    height: 40vh;
+    width: 42vh;
+    padding: 1vh;
+    border-radius: 2.5vh;
+}
+
+.block {
+    background: rgb(6, 6, 88);
+    margin: 0.3vh;
+    border-radius: 2vh;
+    display: flex;
+    justify-content: center;
+    font-family: 'RocknRoll One', sans-serif;
+    color: rgb(175, 250, 255);
+    font-size: 7.7vh;
+    text-shadow: 0.2vh 0.1vh 1vh #000000d3;
+    box-shadow: 0 0 0.17vh 0.1vh rgb(4, 1, 27);
+    cursor: pointer;
+    overflow: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.X {
+    background: rgb(2, 154, 255);
+    box-shadow: inset 0 0 6vh rgb(10, 52, 143);
+}
+
+.X::after {
+    content: "×";
+}
+
+.O {
+    background: rgb(211, 151, 41);
+    box-shadow: inset 0 0 5vh rgb(148, 52, 8);
+}
+
+.O::after {
+    content: "o";
+}
+
+.won {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(77, 224, 9, 0.527);
+    font-weight: 700;
+    font-size: 7vh;
+    width: 85%;
+    padding: 38vh 10vh;
+}
+
+.won::before {
+    content: "Congrats, You WON!!";
+}
+
+.home {
+    content: "Home";
+    font-size: 3.2vh;
+    font-weight: 600;
+    width: 20vh;
+    border: 0.4vh solid rgb(6, 11, 82);
+    border-radius: 20vh;
+    background: rgb(4, 12, 126);
+    color: rgba(255, 255, 255, 0.664);
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 13%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.back {
+    bottom: 5vh;
+}
+
+.lost {
+    color: white;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 0, 0, 0.596);
+    font-weight: 700;
+    font-size: 7vh;
+    width: 80%;
+    padding: 38vh 10vh;
+}
+
+.lost::before {
+    content: "You LOST, Better Luck Next Time!";
+}
+
+.tie {
+    color: white;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 204, 255, 0.596);
+    font-weight: 700;
+    font-size: 7vh;
+    width: 80%;
+    padding: 38vh 10vh;
+}
+
+.tie::before {
+    content: "Game Tied!";
+}
+
+.aborted {
+    color: white;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(200, 255, 0, 0.596);
+    font-weight: 700;
+    font-size: 7vh;
+    width: 80%;
+    padding: 38vh 10vh;
+}
+
+.aborted::before {
+    content: "Game Aborted by Opponent";
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
