@@ -188,11 +188,13 @@ function free(id) {
 
 
 function diswin() { 
+    overcheck();
     if (gameOver==false) return oppname
     else return null
 }
 
 function disabort() {
+    overcheck();
     if (gameOver==false) return true
     else return null
 }
