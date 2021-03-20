@@ -260,8 +260,8 @@ function updateStatusUI(status) {
     }
     
     if (status == "aborted") {
-        game.onDisconnect().set({
-            winner: "ideal"
+        game.onDisconnect().update({
+            winner: "bothaborted"
         })
         document.querySelector(".result").classList.add("aborted")
         document.querySelector(".result").innerHTML = `<button class="home" onclick="location.href='multiplayer.html';"> Home </button>`
