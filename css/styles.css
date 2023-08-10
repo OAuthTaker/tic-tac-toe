@@ -77,6 +77,11 @@ input {
     outline: none;
     padding-left: 3vh;
 }
+input::placeholder {
+    color:rgba(190, 218, 255, 0.7);
+    font-weight: 500;
+}
+
 
 .space {
     height: 2vh;
@@ -168,7 +173,7 @@ input {
     content: "Home";
     font-size: 3.2vh;
     font-weight: 600;
-    width: 20vh;
+    width: 25vh;
     border: 0.4vh solid rgb(6, 11, 82);
     border-radius: 20vh;
     background: rgb(4, 12, 126);
@@ -242,4 +247,8 @@ button,
 select,
 a {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.replay {
+    bottom: 21.5%;
 }
